@@ -19,6 +19,7 @@
 package org.matsim.project;
 
 import org.matsim.api.core.v01.Scenario;
+import org.matsim.contrib.otfvis.OTFVisLiveModule;
 import org.matsim.core.config.Config;
 import org.matsim.core.config.ConfigUtils;
 import org.matsim.core.controler.Controler;
@@ -56,7 +57,7 @@ public class RunMatsim{
 		
 		// possibly modify controler here
 
-//		controler.addOverridingModule( new OTFVisLiveModule() ) ;
+		controler.addOverridingModule( new OTFVisLiveModule() ) ;
 
 //		controler.addOverridingModule( new SimWrapperModule() );
 		
